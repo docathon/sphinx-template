@@ -5,6 +5,8 @@ __pycache__/
 
 # sphinx stuff
 docs/source/auto_examples/
+docs/source/mypackage.rst
+docs/source/modules.rst
 
 # C extensions
 *.so
