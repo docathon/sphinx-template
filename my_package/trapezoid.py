@@ -28,6 +28,12 @@ def trapzf(f, a, b, npts=100):
     -------
     float
         Integral of `f` over the interval :math:`[a, b)`.
+
+
+    We can cross link between prjects, for example, Python os module, 
+    :any:`os.environ`, or :any:`matplotlib.pyplot`
+
+
     """
     # Generate an equally spaced grid to sample the function.
     x = np.linspace(a, b, npts)

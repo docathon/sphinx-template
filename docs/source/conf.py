@@ -36,8 +36,13 @@ print(sys.path[0])
 extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'sphinx.ext.githubpages',
+    'sphinx.ext.intersphinx',
     'numpydoc',
     'sphinx_gallery.gen_gallery']
+
+intersphinx_mapping = {'python': ('https://docs.python.org/3/', None), 
+                       'matplotlib': ('http://matplotlib.org/', None)
+                       }
 
 sphinx_gallery_conf = {
     # path to your examples scripts
