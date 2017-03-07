@@ -8,3 +8,13 @@ script:
     - sphinx-apidoc my_package -o docs/source/
     - cd docs
     - make html
+
+    - set -e
+
+    - # Command to build your docs
+    - pip install doctr
+    - doctr deploy
+
+env:
+  global:
+    - secure: "YqobeviTKKcR/KyCZ1nVoa6WO/uxjDsdzVaaXwoNVlNRgM9RJuXZYMXh2HTJLYI/ZFEeBAIUltfH+Be8j6Ktgpl+PKnOEJHJEy4429qqRKk45XG/xmzST8p9SkQENMwP1BoK//hVYq3RB2FBI8LX1O5qRCes2nKaqVAdBF/aCT/rnbDB64W4zE5EU736g8moDjD1ynS3uXHmA9lPSEUSAAoOHu4nNECJy6EKlBiqAdNWak9v/QHPZrMPikOHVDqx/PykXJgxCfaF2XlK9Sn+X8WGR5mWBg9dAJXow927lS79qO9No6Jfdf/j5UUGX9NehT3pHXcnOW4MJ0U5wPIuuaxRL4XeqgT8SKPWLzDChWhqOyFlTueb/WHL+bkKzO2Nr5siarsR3pcVW+kzyltvHu3Ob5c6GUo8QqgaBcCvMcYBzwpdfuDw4wzc6CGyFZkPsDQhK2l+fqDKPDbkiBjxq65mJBAvKpBQqUYvMRx/OuScy39dkhc5tnbdM8OdynRQMOgmzBXhVIm8S7vzkJeh/yBvOGvspFVz2Yug4up63Uf9EvEvu82OTmaZHhIMf1dOMt7GJXaOcCKynx5fBtv6kiOsCwZ3U4TyCzSTo2Pma2XPP8n3wPvkW7TEu4RpqNR4HTAXS7NSOMhRZD0LFmaVEAuG75JZYgvLSNWO7YsK7tE="
