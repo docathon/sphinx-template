@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# sphinx stuff
+docs/source/auto_examples/
+
 # C extensions
 *.so
 
