@@ -27,8 +27,6 @@ docs/_sources/auto_examples/scatter/plot_scatter.rst.txt
 docs/_sources/auto_examples/trapezoid/plot_trapezoid.rst.txt
 docs/_sources/awesomepage.rst.txt
 docs/_sources/index.rst.txt
-docs/_sources/modules.rst.txt
-docs/_sources/my_package.rst.txt
 docs/_sources/overview.rst.txt
 docs/_static/ajax-loader.gif
 docs/_static/alabaster.css
@@ -64,10 +62,7 @@ docs/auto_examples/trapezoid/plot_trapezoid.html
 docs/awesomepage.html
 docs/genindex.html
 docs/index.html
-docs/modules.html
-docs/my_package.html
 docs/objects.inv
 docs/overview.html
-docs/py-modindex.html
 docs/search.html
 docs/searchindex.js
