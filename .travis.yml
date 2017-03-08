@@ -2,9 +2,16 @@ language:
   - python
 python:
   - 3.5
-install: 
+install:
   - pip install sphinx numpydoc sphinx-gallery matplotlib pillow nose
 script:
   - cd docs
   - make html
   - cd ..
+  - set -e
+  - # Command to build your docs
+  - pip install doctr
+  - doctr deploy
+env:
+  global:
+    - secure: "C9J5PVXvLmkDJON4glHCHEMDvlzNihmuoH+BF4RFCws6kNzCDxhb47sPQk7u8h+oa/cFHOEAszR1p0Rnat3AIph4xyrYoRHaSaZRHT1GCkymO+j5yo3UtOy7F8dINF0dXVBK8jOfG2yWOPwZmdGAlDvmDFJJoji4/VSt3+sBPiHi7P41mO2KTd6JeLcL5T8+xQYTPYbshTEMP9Lz3KhJO62N+mRdmnYom14EDpLvhIRNniws0XEdLuINz90UU/TG0s5IVYw7jBnPqFgw7FH3EYZLS49w19Fecw8vytyojyfTmpKnqopE9T1i1tEKR900myXCt+lzmK7B69FeR7swFtXFGVXgHAMdeu3M2MhF7YO9XGdfSW1lSUoVikxJrQicQNXVcVoU/KICBLxn+boP94Q9qt4tcrlJeZhpF9UN+Fb2k6mgPCtqMI1qKcEXof00RJFG+rn/T1U86JMNpJ4ArrmA/8lAnfhVLu20KCdwhSuiwYaS3PlrushGuoGVwjRXUpobCs5WzVpaYGwcdFqx9lNOpnWdyIIbbO4R3i12qMXdF11/zbgY4gkbPO3D0gEsszWpV72Adf6gZCbIzAoaurZl6kcI3Gr48cHGBZqbRJ0IEjxzG8ObsaDn9r12L2r93P4VAAQePbbtF2AzTIojd0U6Pqi1lJ2F3iojWv8+/9w="
